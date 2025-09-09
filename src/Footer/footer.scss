@@ -2,46 +2,55 @@
 
 .footer {
   .footerInfo {
-    padding: 15rem 5rem 10rem 5rem;
+    padding: 10rem 5rem 5rem 5rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     text-align: center;
+    gap: 1.5rem;    /* Add gap between lines */
+      text-shadow: 2px 2px 8px #063100; 
 
     @include respond(phone) {
-      justify-content: center;
-      padding: 3rem 1rem ;
+      padding: 3rem 1rem;
+      gap: 1rem;
+       text-shadow: 2px 2px 8px #063100; 
     }
 
     .footerDetails {
-      @include respond(phone) {
-        margin-bottom: 2rem;
-        width: 50%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;  /* Gap between items in footerDetails */
+
+      & h1 {
+        font-size: 3rem !important;
+        color: #ffffff !important;
+        font-weight: 700 !important;
+        margin-bottom: 0;
+      }
+
+      & p {
+        font-size: 2rem !important;
+        color: #ffffff !important;
+        font-weight: 500 !important;
+        margin-bottom: 0;
       }
     }
-
-    & h1 {
-      font-size: 2rem;
-      color: var(--white);
-      margin-bottom: 1rem;
-    }
-    & p {
-      font-size: 1.6rem;
-      color: rgb(216, 216, 216);
-      margin-bottom: 0.5rem;
-      cursor: pointer;
-    }
   }
-  .license {
-    font-size: 1.6rem;
-    color: white;
-    text-align: center;
-    padding-bottom: 1rem;
 
-    @include respond(phone){
+  .license {
+    font-size: 2rem !important;
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    text-align: center;
+    padding-top: 4rem;      /* Space above license line */
+    padding-bottom: 1.5rem;
+
+    @include respond(phone) {
       padding-bottom: 7rem;
+      padding-top: 3rem;
     }
   }
 }

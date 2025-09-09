@@ -1,10 +1,10 @@
 @import "./index.scss";
 
 :root {
-  --primary-color: #0f9d58;
-  --background-color: #f0f3f7;
+  --primary-color: #063100;
+  --background-color: #f1ffef;
   --secon-color: #9da2ad;
-  --grey: #7a7a7b;
+  --grey: #3d3d3d;
   --white: #ffffff;
 }
 
@@ -61,4 +61,11 @@
   @include respond(port) {
     bottom: 8rem;
   }
+}
+
+footer, footer * {
+  color: white !important;
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  text-align: center !important;
 }

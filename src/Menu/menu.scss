@@ -1,7 +1,6 @@
 @import "../index.scss";
 
 /* menu */
-
 .foodMenuContainer {
   width: 100%;
   display: flex;
@@ -27,63 +26,35 @@
     }
   }
 
-  .foodMenuContainerList {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    .foodMenuContainerItem {
-      font-size: 1.6rem;
-      border: 0.2rem solid var(--primary-color);
-      border-radius: 1.5rem;
-      padding: 1rem 2rem;
-      color: var(--grey);
-      margin-right: 2rem;
-      margin-bottom: 2rem;
-      transition: 0.3s ease-in-out;
-      cursor: pointer;
-
-      @include respond(phone) {
-        font-size: 1.4rem;
-        padding: 0.8rem 1.6rem;
-        margin-bottom: 1rem;
-      }
-
-      &:hover {
-        background-color: var(--primary-color);
-        color: var(--white);
-      }
-    }
-  }
+  /* Removed category list styles since not used */
 
   .foodMenu {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    gap: 2rem;
 
     .foodMenuDetails {
       width: 20rem;
       height: 35rem;
-      margin-right: 1rem;
+      margin-bottom: 3rem;
       overflow: hidden;
       border-radius: 3rem;
-      box-shadow: 0rem 0.125rem 0.5rem rgba(0, 0, 0, 0.15);
-      margin-bottom: 3rem;
+      box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.15);
       text-align: center;
+      transition: box-shadow 0.3s ease-in-out;
 
       @include respond(phone) {
-        min-width: none;
         width: 40%;
-        margin-right: 0;
+        margin-bottom: 2rem;
       }
 
       &:hover {
-        box-shadow: 0rem 0.125rem 0.25rem 0rem rgba(14, 30, 37, 0.12),
-          0rem 0.125rem 1rem 0rem rgba(14, 30, 37, 0.32);
+        box-shadow:
+          0 0.125rem 0.25rem rgba(14, 30, 37, 0.12),
+          0 0.125rem 1rem rgba(14, 30, 37, 0.32);
       }
 
       .foodMenuImg {
@@ -93,9 +64,10 @@
         overflow: hidden;
 
         & img {
-          height: 100%;
           width: 100%;
-          transition: 0.4s ease-in-out;
+          height: 100%;
+          object-fit: cover;
+          transition: transform 0.4s ease-in-out;
 
           &:hover {
             transform: scale(1.2);

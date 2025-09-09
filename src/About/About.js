@@ -12,16 +12,13 @@ const About = () => {
               style={{ backgroundImage: `url(${bg})` }}
               className="aboutContainerImg bgImg"
             ></div>
-
             <div className="aboutContainerDetails">
               <h1>
-                <span className="colorGrey">We</span> create delicious memories
-                for<span className="colorGrey"> us</span>
+                <span className="colorGrey">Homemade</span> food,
+                <span className="colorGrey"> delivered to</span> your door
               </h1>
               <p>
-                We cook the best food in the entire city, with excellent
-                customer service, the best meals and at the best price, visit
-                us.
+                Enjoy the comfort and warmth of home-cooked meals. Freshly prepared with care, just like family would make. Our dishes bring you the taste and nostalgia of home, so you can relax and savor delicious food any day. We deliver directly to your doorstep, making every meal convenient, healthy, and truly homely.
               </p>
             </div>
           </div>

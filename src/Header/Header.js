@@ -13,7 +13,7 @@ const Header = () => {
     <header className="header">
       <nav className="navbar">
         <a href="#home">
-          <div className="logo">SNACK</div>
+          <div className="logo">Mumma's Meals</div>
         </a>
         <div className="menuItems">
           <a href="#home">
@@ -24,9 +24,6 @@ const Header = () => {
           </a>
           <a href="#menu">
             <div className="menuItem">Menu</div>
-          </a>
-          <a href="#testimonials">
-            <div className="menuItem">Testimonials</div>
           </a>
           <a href="#contact">
             <div className="menuItem">Contact us</div>
@@ -44,9 +41,6 @@ const Header = () => {
           </a>
           <a href="#menu">
             <div className="mobileItem"><MdRestaurantMenu /></div>
-          </a>
-          <a href="#testimonials">
-            <div className="mobileItem"><MdRateReview /></div>
           </a>
           <a href="#contact">
             <div className="mobileItem"><GrContact /></div>

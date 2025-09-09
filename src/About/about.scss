@@ -11,9 +11,12 @@
     padding: 5rem;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     @include respond(phone) {
       padding: 2rem;
+      flex-direction: column;
+      height: auto;
       position: relative;
     }
 
@@ -21,6 +24,9 @@
       width: 60%;
       height: 70%;
       border-radius: 3rem;
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 0.44rem 1.81rem rgba(100, 100, 111, 0.2);
 
       @include respond(phone) {
         width: 100%;
@@ -33,19 +39,22 @@
       text-align: center;
       background-color: var(--white);
       border-radius: 3rem;
-      transform: translateX(-10rem);
-      box-shadow: 0rem 0.44rem 1.81rem 0rem rgba(100, 100, 111, 0.2);
+      box-shadow: 0 0.44rem 1.81rem rgba(100, 100, 111, 0.2);
+      margin-left: -8rem;
+      padding: 3rem;
 
       @include respond(phone) {
-        position: absolute;
-        top: 7rem;
-        right: -6rem;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 2rem;
+        position: static;
+        padding: 2rem 1rem;
       }
 
       & h1 {
         font-size: 3rem;
         color: var(--primary-color);
-        margin: 5rem 3rem 2rem 3rem;
+        margin-bottom: 2rem;
 
         @include respond(phone) {
           font-size: 2rem;
@@ -55,11 +64,16 @@
       & p {
         font-size: 1.7rem;
         color: var(--grey);
-        margin: 5rem 3rem 2rem 3rem;
+        margin-bottom: 2rem;
 
         @include respond(phone) {
           font-size: 1.5rem;
         }
+      }
+
+      .colorGrey {
+        color: var(--grey);
+        font-weight: 600;
       }
     }
   }

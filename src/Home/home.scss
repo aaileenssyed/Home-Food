@@ -23,20 +23,23 @@
     .slogan {
       width: 100%;
       margin: auto;
-      padding-top: 20vh;
+      padding-top: 15vh;
       display: flex;
       flex-direction: column;
       align-items: center;
 
       & h1 {
         font-size: 14rem;
-        letter-spacing: 5rem;
-        color: var(--primary-color);
-        text-transform: uppercase;
-
+  letter-spacing: 1.5rem;         // Reduced from 5rem to 2rem
+  color: #063100;               // Homely deep orange
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6); 
         @include respond(phone) {
           font-size: 6rem;
           letter-spacing: normal;
+          
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6); 
         }
         @include respond(port) {
           font-size: 10rem;
