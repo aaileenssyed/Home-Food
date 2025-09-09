@@ -45,7 +45,7 @@ const Home = () => {
                     gap: "0.7rem",
                   }}
                 >
-                  <AiOutlineWhatsApp /> Make the order now
+                  <AiOutlineWhatsApp /> Make your order now
                 </button>
               </a>
             </div>
